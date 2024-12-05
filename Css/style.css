@@ -13,7 +13,7 @@
 :root{
     --bg-color:#1f242d;
     --second-bg-color:#323946;
-    --main-color:#7cf03d;
+    --main-color:#FFBF00;
     --white-color: #fff;
     --disabled-color: #fff3;
 }
@@ -77,6 +77,7 @@ section{
 }
 
 .section-heading{
+    margin-bottom: 5rem;
     font-size: 3.5rem;
     display: flex;
     justify-content: center;
@@ -260,7 +261,10 @@ section{
     border: 1px solid var(--second-bg-color);
 }
 
-
+.service-div:hover .service-icons-div .service-icon,
+.service-div:hover h1{
+    color: var(--main-color);
+}
 
 .service-div:hover{
     border: 1px solid var(--main-color);
@@ -270,7 +274,10 @@ section{
 
 .service-div:hover .arrow-div {
     transform: rotate(50deg);
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
 }
+
 
 .service-icon{
     font-size: 4rem;
@@ -300,40 +307,108 @@ section{
     transition: 5s ease;
 }
 
-
-/* Resume section */
-
-.why-hire{
-    width: 35%;
+.education-div{
+    display: flex;
+    justify-content: space-between;
 }
 
-.skills{
-    width: 65%;
-    background: #7cf03d;
+.track-heading{
+    font-size: 2.5rem;
+    color: var(--main-color);
 }
 
-.resume-section{
+.education-track{
+    width: 100%;
+}
+
+.education-item{
+    display: flex;
+    gap: 1rem;
+}
+
+.education-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.experience-div{
     display: flex;
     gap: 2rem;
 }
 
-.hire{
-    font-size: 3rem;
+.experience-item{
+    padding: 2rem;
+    border-radius: 5px;
+    background-color: var(--second-bg-color);
 }
 
-.hire-sub{
-    border-radius: 5px;
-    margin: 1rem 0;
+.experience-heading{
+    margin-bottom: 3rem;
     display: flex;
-    height: 4rem;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.skills-heading{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.skill-hub{
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    width: 15%;
+    background: var(--second-bg-color);
+    padding: 2rem;
+}
+
+.skill-icon{
+    font-size: 8rem;
+}
+
+.skill-div{
+    display: flex;
+    gap: 2rem;
+}
+
+.icon-div{
+    margin-top: 1rem;
+    background-color: var(--second-bg-color);
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--second-bg-color);
-    border: 1px solid var(--second-bg-color);
-    transition: .5s ease;
-    cursor: pointer;
+    width: 5rem;
+    height: 4rem;
+    border-radius: 5px;
 }
 
-.hire-sub:hover{
-    border: 1px solid var(--main-color);
+/* contact section... */
+
+.contact-icon{
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.contact-detail-div{
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-details{
+    width: 50%;
+}
+
+.contact-me{
+    width: 50%;
+}
+
+.contact-main-div{
+    display: flex;
 }

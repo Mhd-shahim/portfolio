@@ -1,0 +1,24 @@
+.round-line{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.round{
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    border: 3px solid #FFBF00;
+}
+
+.line{
+    height: 10rem;
+    width: 0.3rem;
+    background-color: #FFBF00;
+}
+
+.time-period{
+    color: grey;
+    font-style: italic;
+}
