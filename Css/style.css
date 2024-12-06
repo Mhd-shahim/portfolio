@@ -165,6 +165,10 @@ section{
     display: flex;
 }
 
+.home-img{
+    padding-top: 5rem;
+}
+
 .home-detail .btn-sci .sci{
     margin-left: 2rem;
     margin-top: 1.2rem;
@@ -406,9 +410,195 @@ section{
 }
 
 .contact-me{
-    width: 50%;
+    width: 100%;
+    background-color: var(--second-bg-color);
+    padding: 2rem 3rem 3rem 3rem;
+    border-radius: 5px;
 }
 
 .contact-main-div{
     display: flex;
 }
+
+.input-div{
+    display: flex;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+.input-item{
+    background: transparent;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.input-item:focus{
+    border: 1px solid white;
+    box-shadow: 0 0 0.8rem var(--main-color);
+}
+
+.message-input{
+    color: var(--main-color);
+    padding: 0rem 1rem;
+    background: transparent;
+    border: 1px solid var(--main-color);
+    width: 100%;
+    height: 20rem;
+    border-radius: 5px;
+}
+
+.message-input:focus{
+    border: 1px solid white;
+    box-shadow: 0 0 0.8rem var(--main-color);
+}
+
+.send-btn{
+    padding: 1.5rem;
+    border-radius: 50px;
+    background: var(--main-color);
+}   
+
+.send-btn:hover{
+    background-color: transparent;
+    box-shadow: 0 0 0.8rem var(--main-color);
+    color: white;
+    cursor: pointer;
+}
+
+.send-btn-div{
+    padding-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  .portfolio-div{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+
+  .work-slider{
+    width: 50%;
+  }
+
+  .portfolio-content{
+    width: 50%;
+  }
+
+  .work-img{
+    height: 30rem;
+    object-fit: cover;
+  }
+
+  #caption{
+    margin-bottom: 1rem;
+  }
+
+  .work-heading{
+    font-size: 2.8rem;
+    color: var(--main-color);
+  }
+
+  footer{
+    background-color:var(--bg-color);
+    padding-bottom: 1rem;
+  }
+
+  .right-name{
+    color: var(--main-color);
+  }
+
+  .name-div{
+    display: flex;
+    justify-content: center;
+  }
